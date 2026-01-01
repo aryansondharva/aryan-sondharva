@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  .header-h {
+    @apply text-3xl lg:text-7xl mb-2 lg:mb-4 uppercase;
+  }
+
+  .header-main-h {
+    @apply text-5xl lg:text-7xl mb-2 lg:mb-4 uppercase;
+  }
+
+  .header-sm {
+    @apply text-xl lg:text-4xl mb-2 lg:mb-4 uppercase text-center;
+  }
+
+  .header_icon {
+    @apply border-2 border-r-0 last:border-r-2 first:rounded-l-full last:rounded-r-full border-[#f4f8fb] py-2 lg:py-3 px-3 lg:px-4 first:pl-4 last:pr-4 text-[1rem] lg:text-[1.4rem] hover:bg-[#f4f8fb] hover:text-[#000000] duration-300 cursor-pointer;
+  }
+
+  .about_card {
+    @apply bg-[#000000] text-[#f4f8fb] rounded-lg px-[4vw] py-[4vh] text-[1rem] md:text-[1.1rem] md:w-[50vw] mx-[8vw];
+  }
+
+  .about_link_card {
+    @apply md:w-[26vw] mx-[8vw] relative border-2 rounded-lg md:mx-[8vw] mb-4 last:mb-0;
+  }
+
+  .about_link_card_title {
+    @apply absolute bottom-0 left-0 bg-[#000000cc] w-full py-[2vh] px-[1vw] text-xl text-[#f4f8fb] flex justify-between cursor-pointer border-t-2 border-[#fff];
+  }
+
+  .whatiknow_box_wrapper {
+    @apply md:border-r-2 md:border-r-[#000000] w-full last:border-r-0 px-[2vw] py-[4vh];
+  }
+
+  .whatiknow_box_skill_progress {
+    @apply rounded-full h-3 w-full bg-[#000] border-2 border-[#000] flex items-center;
+  }
+
+  .whatiknow_box_skill_progress_elem {
+    @apply rounded-full h-2 bg-[#fff];
+  }
+
+  .experiencecardmob {
+    @apply absolute h-8 w-2 top-[-8] bg-[#000] left-1/2 transform -translate-x-1/2;
+  }
+
+  .list-wrapper li {
+    @apply my-3;
+  }
+
+  .list-wrapper li div {
+    @apply mx-4 mt-2 text-[14px];
+  }
+}
+
+* {
+  font-family: "osiris";
+  @apply lg:overflow-visible;
+}
+
+@font-face {
+  font-family: "osiris";
+  src: url("https://hetref.github.io/portfolio-assets/fonts/osiris/Osiris.otf"); /*URL to font*/
+}
